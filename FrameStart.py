@@ -27,7 +27,7 @@ class MainWindow(wx.Frame):
         menuAreaDB = MenuArea.Append(wx.ID_ANY, "&Area", " Abre o banco de dados de Area")
         menuAreaCalc = MenuArea.Append(wx.ID_ANY, "&Calculo p/ area", " Abre o calculo por area")
 
-        menuCompensarDB = MenuCompensacao.Append(wx.ID_ANY, "&Biomas", " Abre o banco de dados de biomas")
+        menuCompensarDB = MenuCompensacao.Append(wx.ID_ANY, "&Plantas", " Abre o banco de dados de plantas")
         menuCompensarCalc = MenuCompensacao.Append(wx.ID_ANY, "&Compensação", " Abre o calculo de compensação")
 
         mencadastro = MenuCadastros.Append(wx.ID_ANY, "&Cadastro", " Abre a tabela de cadastros")
