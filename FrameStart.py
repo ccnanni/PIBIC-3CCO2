@@ -97,7 +97,7 @@ class MainWindow(wx.Frame):
         dlg.ShowModal()
         dlg.Destroy()
     def onPais(self, e):
-        dlg = wx.MessageDialog(self, "Tela em teste", " Cadastro", wx.OK)
+        dlg = wx.MessageDialog(self, "Ainda em Desenvolvimento", " Cadastro", wx.OK)
         dlg.ShowModal()
         dlg.Destroy()
 
