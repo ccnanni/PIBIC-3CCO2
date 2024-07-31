@@ -1,4 +1,4 @@
-import wx
+import wx, Cadastros as C
 
 class MainWindow(wx.Frame):
 
@@ -90,9 +90,7 @@ class MainWindow(wx.Frame):
         dlg.ShowModal()
         dlg.Destroy()
     def onCadastro(self, e):
-        dlg = wx.MessageDialog(self, "Ainda em Desenvolvimento", " Cadastro", wx.OK)
-        dlg.ShowModal()
-        dlg.Destroy()
+        C.CadastrosWindow(frame, "Cadastros")
 
 app = wx.App(False)
 frame = MainWindow(None, "3C-CO2")
