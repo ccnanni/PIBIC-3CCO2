@@ -24,6 +24,7 @@ class MainWindow(wx.Frame):
         menuVeiculoDB = MenuVeiculos.Append(wx.ID_ANY, "&Veiculos", " Abre o banco de dados de veiculos")
         menuVeiculosCalc = MenuVeiculos.Append(wx.ID_ANY, "&Calculo p/ rota", " Abre o calculo por rota")
 
+        menuPais = MenuArea.Append(wx.ID_ANY, "Cons p/ Pais", "Abre o banco de dados de cada Pais")
         menuAreaDB = MenuArea.Append(wx.ID_ANY, "&Area", " Abre o banco de dados de Area")
         menuAreaCalc = MenuArea.Append(wx.ID_ANY, "&Calculo p/ area", " Abre o calculo por area")
 
@@ -32,9 +33,10 @@ class MainWindow(wx.Frame):
 
         mencadastro = MenuCadastros.Append(wx.ID_ANY, "&Cadastro", " Abre a tabela de cadastros")
 
+
         #Criando a barra de menu
         Menubar = wx.MenuBar()
-        Menubar.Append(MenuAplicacao, "Applicação")
+        Menubar.Append(MenuAplicacao, "Aplicação")
         Menubar.Append(MenuVeiculos, "Calculo por rota")
         Menubar.Append(MenuArea, "Calculo por area")
         Menubar.Append(MenuCompensacao, "Compensação")
@@ -51,6 +53,7 @@ class MainWindow(wx.Frame):
         self.Bind(wx.EVT_MENU, self.onCompDB, menuCompensarDB)
         self.Bind(wx.EVT_MENU, self.onCompCalc, menuCompensarCalc)
         self.Bind(wx.EVT_MENU, self.onCadastro, mencadastro)
+        self.Bind(wx.EVT_MENU, self.onPais, menuPais)
 
 
 
@@ -93,6 +96,12 @@ class MainWindow(wx.Frame):
         dlg = wx.MessageDialog(self, "Ainda em Desenvolvimento", " Cadastro", wx.OK)
         dlg.ShowModal()
         dlg.Destroy()
+    def onPais(self, e):
+        dlg = wx.MessageDialog(self, "Tela em teste", " Cadastro", wx.OK)
+        dlg.ShowModal()
+        dlg.Destroy()
+
+
 
 app = wx.App(False)
 frame = MainWindow(None, "3C-CO2")
