@@ -1,4 +1,4 @@
-import wx, Cadastros as C
+import wx, TelasExtras as C
 
 class MainWindow(wx.Frame):
 
